@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parameters]" guice-stage="DEVELOPMENT">
+  <parameter name="A" value="10"/>
+  <parameter name="B" value="7"/>
+  <test thread-count="5" name="Multiply(failed)">
+    <classes>
+      <class name="seleniumtests.DProvider">
+        <methods>
+          <include name="myTest" invocation-numbers="1"/>
+        </methods>
+      </class> <!-- seleniumtests.DProvider -->
+    </classes>
+  </test> <!-- Multiply(failed) -->
+</suite> <!-- Failed suite [Parameters] -->
